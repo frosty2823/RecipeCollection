@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipe Management System</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section id="add-recipe">
+        <form id="recipe-form">
+          <input type="text" id="title" placeholder="Title" required />
+
+          <textarea
+            id="ingredients"
+            placeholder="Ingredients"
+            required
+          ></textarea>
+
+          <textarea
+            id="instructions"
+            placeholder="Instructions"
+            required
+          ></textarea>
+
+          <input type="file" id="image" />
+
+          <button id="submit-btn">Add Recipe</button>
+        </form>
+      </section>
+      <section id="recipe-list">
+        <h2>Recipes</h2>
+        <ul id="recipes">
+          <!-- Recipe items will be dynamically added here -->
+        </ul>
+      </section>
+      <section id="recipe-details">
+        <!-- Recipe details will be displayed here -->
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
